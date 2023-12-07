@@ -1,7 +1,73 @@
-# MusicGeneratorAI_Experiment
-Crear un buen archivo `README.md` para tu proyecto en GitHub es crucial, ya que es la primera cosa que los visitantes verán. Un `README` efectivo explica claramente qué hace el proyecto, cómo se usa y cómo otros pueden contribuir o aprender de él. Aquí tienes una estructura sugerida para tu proyecto de generación de música:
+ENG - ESP
 
----
+# Music Generator AI
+
+## Description
+The Music Generator AI project is an advanced application that uses machine learning to generate new music. This project leverages the processing of MFCC (Mel-Frequency Cepstral Coefficients) audio features and utilizes recurrent neural networks, specifically LSTM (Long Short-Term Memory), to generate music sequences.
+
+## Features
+- Load and process music files to extract MFCC features.
+- Use Deep Learning models to generate music sequences.
+- Visualize audio waveforms and spectrograms.
+- Ability to generate and save generated audio.
+
+## Requirements
+- Python 3.x
+- Librosa
+- NumPy
+- Matplotlib
+- Keras
+- SoundFile
+
+## Installation
+Describe how to set up and run your project. Include commands that need to be run. For example:
+
+```bash
+pip install librosa numpy matplotlib keras soundfile
+```
+
+## Usage
+Explain how to use your project. For example:
+
+1. **Loading Data**: Use `data_loader.py` to load and process music files.
+
+    ```python
+    from data_loader import cargar_y_procesar_un_archivo
+    data = cargar_y_procesar_un_archivo('path/to/your/file.mp3')
+    ```
+
+2. **Generating Music**: Use `generator.py` to generate new music based on an initial sequence.
+
+    ```python
+    from generator import generar_musica
+    new_music = generar_musica(model, seed_sequence)
+    ```
+
+3. **Visualization**: Use functions in `data_loader.py` and `generator.py` to visualize data and results.
+
+    ```python
+    from data_loader import visualizar_forma_de_onda
+    visualizar_forma_de_onda(data)
+    ```
+
+## Project Structure
+Briefly describe the structure of your project, for example:
+
+- `data_loader.py`: Loads and processes music files.
+- `generator.py`: Contains logic for generating new music.
+- `model.py`: Defines the machine learning model.
+- `utils.py`: Helper functions for saving and loading models and sequences.
+- `main.py`: The main script for training models and generating music.
+
+## Contributing
+If you would like to contribute to the project, please consider the following:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b new-feature`).
+3. Make your changes and commit them (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin new-feature`).
+5. Open a Pull Request.
+
 
 # Music Generator AI
 
@@ -63,7 +129,6 @@ Describa brevemente la estructura de su proyecto, por ejemplo:
 - `main.py`: Script principal para entrenar modelos y generar música.
 
 ## Contribuir
-Instrucciones para contribuir al proyecto. Por ejemplo:
 
 Si desea contribuir al proyecto, considere lo siguiente:
 
@@ -73,9 +138,3 @@ Si desea contribuir al proyecto, considere lo siguiente:
 4. Haga push a la rama (`git push origin feature-nueva`).
 5. Abra una Pull Request.
 
-## Licencia
-Incluya detalles sobre la licencia del proyecto. Si no tiene una, considere añadir una.
-
----
-
-Este es solo un ejemplo para empezar. Puedes personalizarlo según las necesidades de tu proyecto. Asegúrate de que el `README` sea claro, conciso y fácil de entender. Además, incluir capturas de pantalla o videos de tu proyecto en acción puede ser muy útil para los visitantes.
